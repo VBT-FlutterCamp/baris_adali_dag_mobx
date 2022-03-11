@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:mobx/mobx.dart';
 
+import '../../../core/constans/enum.dart';
 import '../model/post.dart';
 part 'post_view_model.g.dart';
 
@@ -64,5 +65,3 @@ abstract class _PostViewModelBase with Store {
 
   void name(args) {}
 }
-
-enum PageState { LOADING, ERROR, SUCCESS, NORMAL }
